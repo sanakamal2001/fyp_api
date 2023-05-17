@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "api/DASapi.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/DASapi.py"
+         }
+     ]
+ }
